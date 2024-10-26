@@ -1,28 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-  --text-color: #AF3438;
-  --card-front-color: #144480;
-  --card-back-color: #144480;
+  --text-color: #ffffff;
+  --card-front-color: #772D2D;
+  --card-back-color: #F5E028;
 }
 
 body {
-  background: url(img/bg-desktop-red.webp);
-  font-family: Tomorrow;
+  background: url(img/bg-desktop-green.webp);
+  font-family: Grandstander;
 }
 
 .cartao__conteudo {
   background-color: var(--card-front-color);
   text-align: center;
   height: 100%;
-  padding: 4rem;
-  margin-top:  4rem;
+  transform-style: preserve-3d;
+  transition: transform 300ms ease-in-out;
+  padding: 0.5rem;
+  margin-top:  0.5rem;
 }
 
 #container {
   display: flex;
   flex-wrap: wrap;
 }
+
 .cartao {
   margin: 1rem 1rem;
   height: 20rem;
@@ -32,6 +35,7 @@ body {
 
 .cartao__conteudo p {
   padding: 4rem;
+  margin-top: 3rem;
 }
 
 .cartao__conteudo h3 {
@@ -56,33 +60,26 @@ body {
   font-weight: 700;
 }
 
-.cartao:hover .cartao__conteudo{
-  transform: rotateY(180deg);
-  transition: transform 300ms ease-in-out;  
-}
-
-
-.cartao__conteudo__frente,
-.cartao__conteudo__verso{
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta{
     backface-visibility: hidden;
     position: absolute;
     height: 100%;
     width: 100%;
 }
 
-.cartao__conteudo__verso{
+.cartao__conteudo__resposta{
   transform: rotateY(180deg);
 }
 
-.cartao__conteudo__frente,
-.cartao__conteudo__verso{
-    position: absolute;
+.cartao:hover .cartao__conteudo{
+  transform: rotateY(180deg);
+  transition: transform 300ms ease-in-out;  
 }
-
 
 footer {
   background-color: black;
-  color: white;
+  color: yellow;
   position: fixed;
   bottom: 0;
   width: 100%;
