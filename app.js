@@ -16,7 +16,7 @@ function criaCartao(categoria, pergunta, resposta) {
     `
     let respostaEstaVisivel = false
 
-    function vira cartao() {
+    function viraCartao() {
         respostaEstaVisivel = !respostaEstaVisivel
         cartao.classList.toggle('active', respostaEstaVisivel)
     }
@@ -26,5 +26,5 @@ function criaCartao(categoria, pergunta, resposta) {
     container.appendChild(cartao)
    
    
-   console.log(categoria, pergunta, resposta);
+  console.log(categoria, pergunta, resposta);
 }
