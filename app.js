@@ -13,7 +13,6 @@ function criaCartao(categoria, pergunta, resposta) {
         <p>${resposta}</p>
     </div>
     </div>
-
     `
 }
     let respostaEstaVisivel = false
@@ -26,5 +25,5 @@ function criaCartao(categoria, pergunta, resposta) {
     
     let container = document.getElementById('container')
     container.appendChild(cartao)
-    console.log(categoria, pergunta, resposta)
+    //console.log(categoria, pergunta, resposta)
 }
